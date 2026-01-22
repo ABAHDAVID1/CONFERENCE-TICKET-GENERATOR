@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor || CONFERENCE TICKET GENERATOR</title>
+    <link rel="icon" href="./img/favicon.png">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <img src="./img/pattern-squiggly-line-top.svg" alt="line-top" class="line-top">
+    <img src="./img/pattern-squiggly-line-bottom.svg" alt="line-bottom" class="line-bottom">
+    <img src="./img/pattern-circle.svg" alt="circle1" class="circle1">
+    <img src="./img/pattern-circle.svg" alt="circle2" class="circle2">
+    
+    <div class="container">
+      <div id="inputContainer">
+        <div class="coding-conf">
+          <img src="./img/logo-mark.svg" alt="mark logo" class="logo-mark">
+          <h2>Coding Conf</h2>
+        </div>
+        <h1 class="journey-text">Your Journey to Coding Conf 2025 Starts Here!</h1>
+        <h4 class="sub-text">Secure your spot at next year's biggest coding conference.</h4>
+        
+        <div class="all-inputs">
+          <h4>Upload Avatar</h4>
+          <div class="drag-drop-container">
+              <input type="file" id="clickUpload" accept="image/*" hidden>   
+            <button id="iconUpload" >
+              <label for="clickUpload">
+                 <img src="./img/icon-upload.svg" alt="icon-upload" width="55px" class="icon-upload">
+              </label>
+            </button>
+            <div id="uploadedImageContainer">
+            <img src="" id="uploadedImage" width="35px">
+            </div>
+            <div id="changeRemoveImage">
+              <button id="removeImage">Remove Image</button>
+              <button id="changeImage">
+                <label for="clickUpload">Change Image</label>
+              </button>
+            </div>
+            <p id="uploadText">Drag and drop or click to upload</p>
+          </div>
+          <div class="upload-container">
+          <img src="./img/icon-info.svg" alt="icon info">
+          <h6 id="errorUpload">Upload your photo (JPG or PNG, max size: 500KB).</h6>
+          </div>
+          <h5>Full Name</h5>
+          <input type="text" id="fullName" placeholder="Full Name">
+          <h6 id="errorFullName">Please enter a valid name</h6>
+          
+          <h5>Email Address</h5>
+          <input type="email" id="email" placeholder="example@email.com">
+          <h6 id="errorEmail">Please enter a email address</h6>
+          
+          <h5>GitHub Username</h5>
+          <input type="text" id="gitHub" placeholder="@jonatankristof0101">
+          <h6 id="errorGitHub">Please enter a valid gitHub Username</h6>
+          <button id="generationBtn">Generate My Ticket</button>
+        </div>
+      </div>
+      
+      <div id="ticketContainer">
+        <div class="coding-conf">
+          <img src="./img/logo-mark.svg" alt="mark logo" class="logo-mark">
+          <h2>Coding Conf</h2>
+        </div>
+        <h1 class="congrats-text">Congrats, <span id="inputedName"></span> Your ticket is ready.</h1>
+        <h4>We've emailed your ticket to <br> 
+        <span id="inputedEmail"></span> and will send updates in <br> the run up to the event.
+        </h4>
+        <div class="pattern-ticket">
+          <div class="coding-conf">
+          <img src="./img/logo-mark.svg" alt="mark logo" width="40px" class="logo-mark">
+          <h2>Coding Conf</h2>
+        </div>
+        <h6 class="date">Jan 31, 2025 / Austin, TX</h6>
+        <div class="inputed-values">
+          <img id="ticketImage" width="30px">
+          <div class="nameGitHub">
+            <h2 id="ticketName"></h2>
+            <img src="./img/icon-github.svg" alt="icon-github" width="30px" class="icon-github">
+            <h5 id="inputedGitHub"></h5>
+          </div>
+        </div>
+        </div>
+      </div>
+      
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

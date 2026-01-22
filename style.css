@@ -1,0 +1,486 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  transition: all 2s ease-in;
+  position: relative;
+  background-image: url('./img/background-desktop.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.line-top{
+  position: absolute;
+  top: 40px;
+  right: 0px;
+}
+
+.line-bottom{
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+
+.circle1{
+  position: absolute;
+  left: 30px;
+  top: -110px;
+}
+
+.circle2{
+  position: absolute;
+  top: 410px;
+  right: 220px;
+}
+
+.container{
+  width: 100%;
+  background-image: url('./img/pattern-lines.svg');
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+#inputContainer{
+  width: 600px;
+  text-align: center;
+  height: 850px;
+}
+
+#ticketContainer{
+  width: 600px;
+  text-align: center;
+  display: none;
+  height: 700px;
+}
+
+#ticketContainer h4{
+  color: white;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.coding-conf{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.pattern-ticket .coding-conf{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: bold;
+  color: white
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.congrats-text {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.journey-text{
+  color: white;
+  font-size: 2.5rem;
+}
+
+#inputContainer h4{
+  color: white;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  font-weight: lighter;
+}
+
+.all-inputs{
+  width: 400px;
+  transform: translate(100px);
+  height: 630px;
+}
+
+.all-inputs h4{
+  color: white;
+  margin-bottom: 8px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.drag-drop-container{
+  width: 100%;
+  border: 2px dashed white;
+  height: 180px;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+}
+
+#iconUpload{
+  width: 80px;
+  position: relative;
+  height: 80px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.drag-drop-container p{
+  color: white;
+  margin-top: 40px;
+}
+
+.upload-container{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  color: white;
+  font-weight: lighter;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.all-inputs h5{
+  color: white;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+#fullName,
+#email,
+#gitHub{
+  width: 100%;
+  background: transparent;
+  height: 50px;
+  transition: all 0.9s ease-in;
+  font-size: 1rem;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+#errorFullName,
+#errorEmail,
+#errorGitHub{
+  display: none;
+  text-align: left;
+  margin-top: 5px;
+  color:  hsl(7, 88%, 67%);
+}
+
+#errorUpload{
+  text-align: left;
+}
+
+#generationBtn{
+  width: 100%;
+  height: 50px;
+  border: 0;
+  border-radius: 10px;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: hsl(7, 88%, 67%);
+}
+
+#changeRemoveImage{
+  width: 100%;
+  height: 30px;
+  margin-top: 30px;
+  display: none;
+}
+
+#changeImage,
+#removeImage{
+  color: white;
+  border-radius: 5px;
+  height: 25px;
+  width: 100px;
+  border: 0;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: silver;
+}
+
+#uploadedImage{
+  width: 80px;
+  border: 1px solid white;
+  display: none;
+  transform: translate(140px);
+  margin-bottom: 10px;
+  height: 80px;
+  border-radius: 10px;
+}
+
+.congrats-text{
+font-size: 1rem;  
+}
+
+#inputedName{
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+#inputedEmail{
+  color: hsl(7, 88%, 67%);
+}
+
+.pattern-ticket{
+  padding: 20px;
+  width: 100%;
+  height: 290px;
+  margin-top: 80px;
+  background-image: url('./img/pattern-ticket.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.date{
+  font-size: 1rem;
+  margin-left: 50px;
+  color: silver;
+  word-spacing: 2;
+  font-weight: bold;
+  margin-bottom: 70px;
+  text-align: left;
+}
+
+.inputed-values{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#ticketImage{
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+}
+
+.nameGitHub{
+  width: 400px;
+  text-align: left;
+  height: 80px;
+}
+
+#ticketName{
+  color: white;
+  margin-bottom: 7px;
+  font-size: 1.8rem;
+}
+
+#inputedGitHub{
+  color: silver;
+  display: inline;
+  vertical-align: top;
+  margin-left: 5px;
+  font-size: 1.3rem;
+} 
+
+@media screen and (max-width: 776px){
+
+body{
+  width: 100%;
+  padding: 10px;
+  background-image: url('./img/background-mobile.png');
+}
+
+.line-top{
+  top: 15px;
+  width: 100px;
+}
+
+.line-bottom{
+  width: 400px;
+  left: -70px;
+}
+
+.circle1{
+  left: -10px;
+  width: 100px;
+  top: -15px;
+}
+
+.circle2{
+  top: 450px;
+  width: 120px;
+  right: 0px;
+}
+
+#inputContainer{
+  width: 100%;
+  height: 990px;
+}
+
+#ticketContainer{
+  width: 100%;
+  height: 990px;
+}
+
+#ticketContainer h4{
+  margin-bottom: 30px;
+  margin-top: 15px;
+  font-size: 1.4rem;
+  word-spacing: 5px;
+  line-height: 1.1;
+  font-weight: lighter;
+}
+
+#inputContainer h1,
+#ticketContainer h1{
+  color: white;
+  font-size: 1.8rem;
+}
+
+.logo-mark{
+  width: 25px;
+}
+
+.sub-text{
+  margin-bottom: 40px;
+  margin-top: 20px;
+  margin-right: 45px;
+  font-size: 1.4rem;
+  margin-left: 45px;
+}
+
+.all-inputs{
+  width: 100%;
+  transform: translate(0px);
+  height: 750px;
+}
+
+.all-inputs h4{
+  margin-bottom: 0px;
+}
+
+.drag-drop-container{
+  height: 120px;
+  border: 2px dashed white;
+  padding: 5px;
+}
+
+#iconUpload{
+  width: 50px;
+  margin-top: 10px;
+  height: 50px;
+  border: 1px solid white;
+}
+
+.drag-drop-container p{
+  margin-top: 10px;
+}
+
+.upload-container{
+  margin-top: 10px;
+}
+
+#fullName,
+#email,
+#gitHub{
+  font-size: 1.1rem;
+  padding: 15px;
+}
+
+#changeRemoveImage{
+  margin-top: 5px;
+}
+
+#changeImage,
+#removeImage{
+  font-size: 0.9rem;
+}
+
+.icon-upload{
+  width: 35px;
+}
+
+#uploadedImage{
+  width: 70px;
+  transform: translate(130px);
+  height: 70px;
+}
+
+.congrats-text{
+  font-size: 1.5rem;
+}
+
+#inputedName{
+  font-size: 2.5rem;
+}
+
+.pattern-ticket{
+  padding: 10px;
+  height: 170px;
+  margin-top: 50px;
+  background-size: contain;
+}
+
+.date{
+  font-size: 0.8rem;
+  margin-left: 40px;
+  word-spacing: 3;
+  margin-bottom: 20px;
+  margin-top: -10px;
+}
+
+.inputed-values{
+  height: 70px;
+  gap: 5px;
+  align-items: center;
+}
+
+#ticketImage{
+  width: 90px;
+  height: 70px;
+  border-radius: 10px;
+}
+
+.nameGitHub{
+  height: 70px;
+}
+
+#ticketName{
+  color: white;
+  margin-bottom: 7px;
+  font-size: 0.9rem;
+}
+
+#inputedGitHub{
+  color: silver;
+  display: inline;
+  vertical-align: top;
+  margin-left: 5px;
+  font-size: 0.8rem;
+} 
+
+.icon-github{
+  width: 20px;
+}
+}
